@@ -23,7 +23,7 @@ RUN apt-get update \
 	&& echo "deb http://nginx.org/packages/debian/ stretch nginx" >> /etc/apt/sources.list \
 	&& apt-get update \
 	&& apt-get install --no-install-recommends --no-install-suggests -y \
-						nginx=${NGINX_VERSION} \
+						nginx-extras=${NGINX_VERSION} \
 						gettext-base \
 	&& rm -rf /var/lib/apt/lists/*
 
